@@ -1,0 +1,11 @@
+spring: 
+      datasource:
+                url: #jdbc:driver://url_of_the_machine:port/database
+                username: #username_for_access_database
+                password: #password_for_access_database
+      jpa: 
+          show-sql: false #if_u_want_to_see_sql_instructions_on_console 
+          hibernate:                    ddl-auto: #when_modify_classes_hibernate_update_db
+          properties: 
+                    hibernate:
+                              dialect: #dialect_for_interatcting_with_database
