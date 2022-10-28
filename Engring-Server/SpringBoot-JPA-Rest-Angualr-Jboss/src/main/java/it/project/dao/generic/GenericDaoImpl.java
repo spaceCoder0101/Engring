@@ -6,7 +6,7 @@ import javax.persistence.PersistenceContext;
 public abstract class GenericDaoImpl<T> implements GenericDao<T> {
 
 	@PersistenceContext
-	EntityManager em;
+	protected EntityManager em;
 	
 	@Override
 	public void persist(T obj) {
